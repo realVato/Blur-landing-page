@@ -1,9 +1,13 @@
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #333;
     color: #fff;
     margin: 0;
-    overflow-x: hidden;
+    position: relative;
 }
 
 /* Showcase */
@@ -29,7 +33,7 @@ body {
 .showcase .content {
     position: absolute;
     z-index: 1;
-    top: 35%;
+    top: 20%;
     left: 34%;
     
     text-align: center;
@@ -92,4 +96,26 @@ body {
     text-align: center;
     padding: 3rem 0rem 8rem 0rem;
     width: 100%;
+}
+
+
+@media screen and (max-width: 880px) {
+
+    .hide-on-small {
+        display: none;
+    }
+
+    .showcase .content {
+        top: 15%;
+        left: 5%;
+    }
+
+    .grid-3 .grid-items {
+        grid-template-columns: 1fr;
+    }
+
+    .container .grid-2{
+        grid-template-columns: 1fr;
+
+    }
 }
