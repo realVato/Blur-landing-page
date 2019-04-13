@@ -3,6 +3,7 @@ body {
     background-color: #333;
     color: #fff;
     margin: 0;
+    overflow-x: hidden;
 }
 
 /* Showcase */
@@ -28,8 +29,9 @@ body {
 .showcase .content {
     position: absolute;
     z-index: 1;
-    top: 40%;
-    left: 32%;
+    top: 35%;
+    left: 34%;
+    
     text-align: center;
 }
 
@@ -37,8 +39,57 @@ body {
     font-size: 3rem;
 }
 
+/* Services */
+.services {
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 2rem;
+}
+
+.grid-3 .grid-items {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* About us */
+
+.about-us {
+    background-color: #ccc;
+    color: #333;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.about-us h1 {
+    font-size: 2rem;
+}
+
+
+.container .grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0rem 3rem;
+}
+
+
+/* Footer */
+.bg-dark {
+    padding: 2rem;
+    text-align: center;
+}
+
 /* Utilities */
 
 .text {
     font-size: 1.3rem;
+}
+
+.container {
+    text-align: center;
+    padding: 3rem 0rem 8rem 0rem;
+    width: 100%;
 }
