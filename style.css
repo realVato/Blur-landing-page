@@ -114,6 +114,10 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .grid-items div {
+        border-bottom: 1px solid rgb(75, 74, 74);
+    }
+
     .container .grid-2{
         grid-template-columns: 1fr;
 
